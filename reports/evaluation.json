@@ -1,0 +1,18 @@
+{
+  "data_type": "public Synthea synthetic sample; not real Medicaid claims",
+  "cohort_counts": {
+    "train": 3
+  },
+  "gap_proxy": {
+    "eligible_age_3_17": 3,
+    "missing_wellness_record": 0
+  },
+  "models": {},
+  "limitations": [
+    "Small synthetic sample; no clinical validity or impact established.",
+    "Year-only enrollment proxy; children under 1 excluded for full history.",
+    "No real claims adjudication lag modeled; encounters used as claims proxy.",
+    "No model selection on test; all model comparisons are exploratory."
+  ],
+  "status": "insufficient_data_for_training"
+}
