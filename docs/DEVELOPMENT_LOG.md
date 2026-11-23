@@ -32,6 +32,14 @@ This chronological record documents completed work, evidence, decisions and next
 - **Limitations:** HHS extracts are national and lack beneficiary state/age attribution. CMS financial detail includes overlapping categories and adjustments. Full spending data has not yet been profiled or loaded into the analytical database.
 - **Next:** Profile HHS data efficiently, assess provider geography, integrate verified CMS financial tables and acquire hospital data.
 
+## 2026-11-23 — Milestone 1, provider and context dataset acquisition
+
+- **Completed:** Acquired HHS provider enrollment segments, NY 2024 Medicaid-primary SPARCS discharge records, county HRSA 2024–2025 and Census 2020–2024 ACS tables. Implemented reproducible acquisition and packaged two download archives.
+- **Observed:** 3,648,557 five-state provider segments, 307 matched county-equivalents and 635,606 NY discharges (159,975 pediatric and 475,631 adult). Provider segments are not unique providers. The national file matches its published SHA-256.
+- **Verification:** Five-state provider output counts independently confirmed; HRSA and ACS keys match; all NY payer/year rows and official API count reconciled; ZIP integrity checks and existing unit tests passed.
+- **Limitations:** Comparable NJ, MD, VA and PA discharge files require access arrangements. The public provider source cannot establish beneficiary state or age. No model training occurred.
+- **Next:** Profile spending schemas, document provider linkage ambiguity, integrate financial/county data, assess accessible aggregate hospital comparisons.
+
 ## Entry template
 
 - Date and milestone:

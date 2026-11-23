@@ -1,0 +1,158 @@
+{
+  "built_at_utc": "2026-11-23T05:15:05.006628+00:00",
+  "provider": {
+    "url": "https://stopendataprod.blob.core.windows.net/datasets/medicaid-provider-enrollment-segments/2026-07-24/dataset/medicaid-provider-enrollment-segments.parquet",
+    "path": "data/raw/hhs/medicaid-provider-enrollment-segments.parquet",
+    "bytes": 195945074,
+    "sha256": "c763c53946e5f8822e46db47d2cbd0de09c153c6b7045b57504c461afa2ce92a",
+    "published_sha256_verified": true,
+    "national_rows": 65970112,
+    "schema": {
+      "NPI": "VARCHAR",
+      "STATE_CD": "VARCHAR",
+      "ENRL_START_DT": "DATE",
+      "ENRL_END_DT": "DATE",
+      "ENRL_STATUS_CD": "VARCHAR",
+      "ENRL_STATUS_DESC": "VARCHAR",
+      "ENRL_PLAN_CD": "VARCHAR",
+      "ENRL_PLAN_DESC": "VARCHAR",
+      "PRVDR_TYPE": "VARCHAR",
+      "PRVDR_TYPE_DESC": "VARCHAR"
+    },
+    "state_rows": {
+      "MD": 1524148,
+      "NJ": 221172,
+      "VA": 683652,
+      "PA": 896019,
+      "NY": 323566
+    },
+    "output": "data/processed/provider_enrollment_five_states.parquet",
+    "output_sha256": "535e4cc9e8a1f2b4c61c7dd4f5f1f3e7fff07853f13bbdaa12b4bea005b57650"
+  },
+  "county": {
+    "hrsa_sources": [
+      {
+        "url": "https://data.hrsa.gov/DataDownload/AHRF/AHRF_2024-2025_CSV.zip",
+        "path": "data/raw/hrsa/AHRF_2024-2025_CSV.zip",
+        "bytes": 23287136,
+        "sha256": "6974adcd93ed8e0718d655e6912707bfc5ec37a9a2baf1fc27f59f12b5c441a0"
+      },
+      {
+        "url": "https://data.hrsa.gov/DataDownload/AHRF/AHRF_USER_TECH_2024-2025.zip",
+        "path": "data/raw/hrsa/AHRF_USER_TECH_2024-2025.zip",
+        "bytes": 1019394,
+        "sha256": "aa03026107b8acf7fd5c5f2d0c96c30b44d254cbb122a31141a3aee2d726f680"
+      }
+    ],
+    "acs_sources": [
+      {
+        "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b01003.dat",
+        "path": "data/raw/acs/acsdt5y2024-b01003.dat",
+        "bytes": 18313708,
+        "sha256": "38d1a992bb058d184009b10b9b34987279aee575e4323165cfb5706c69b6ca90"
+      },
+      {
+        "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b17001.dat",
+        "path": "data/raw/acs/acsdt5y2024-b17001.dat",
+        "bytes": 118607125,
+        "sha256": "707adda8aaff136382f4fe0858617d09062da48b1a3d2ab2e9a1047def09b531"
+      },
+      {
+        "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b19013.dat",
+        "path": "data/raw/acs/acsdt5y2024-b19013.dat",
+        "bytes": 17917916,
+        "sha256": "b25a176b0e6c339b6f3a2a0d3d8446bf06f5f080b4395993ec9a8313efb1c229"
+      },
+      {
+        "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b08201.dat",
+        "path": "data/raw/acs/acsdt5y2024-b08201.dat",
+        "bytes": 65043091,
+        "sha256": "2f64e698223ba83f97b67dde4a34961a02f230e0359ffc69b9657b89a3df6b4d"
+      }
+    ],
+    "state_counties": {
+      "MD": 24,
+      "NJ": 21,
+      "NY": 62,
+      "PA": 67,
+      "VA": 133
+    },
+    "hrsa_columns": 4352,
+    "acs_fields": {
+      "b01003": [
+        "B01003_E001",
+        "B01003_M001"
+      ],
+      "b17001": [
+        "B17001_E001",
+        "B17001_M001",
+        "B17001_E002",
+        "B17001_M002"
+      ],
+      "b19013": [
+        "B19013_E001",
+        "B19013_M001"
+      ],
+      "b08201": [
+        "B08201_E001",
+        "B08201_M001",
+        "B08201_E002",
+        "B08201_M002"
+      ]
+    },
+    "matched_county_keys": 307,
+    "outputs": {
+      "data/processed/ahrf_2024_2025_five_states.csv": "7db5a65f9fbf7d145ffc229276761e1efe8ee2ed3e84cbaa34abbd1cc40eb663",
+      "data/processed/acs_2020_2024_five_states.csv": "cbf8852acdf734d4b1287c46dd9e5c49cdfdd2676bd230c69f4102a3344b5ac2"
+    }
+  },
+  "hospital": {
+    "url": "https://health.data.ny.gov/resource/sf4k-39ay.csv?%24where=payment_typology_1+%3D+%27Medicaid%27&%24limit=700000&%24order=%3Aid",
+    "path": "data/raw/sparcs/sparcs_2024_medicaid_primary.csv",
+    "bytes": 275552435,
+    "sha256": "c9616fc90246d640620c176fbde02884bb6bffa95564a0dccccdc3b6b2b5e594",
+    "columns": [
+      "health_service_area",
+      "hospital_county",
+      "operating_certificate_number",
+      "permanent_facility_id",
+      "facility_name",
+      "age_group",
+      "zip_code",
+      "gender",
+      "race",
+      "ethnicity",
+      "length_of_stay",
+      "type_of_admission",
+      "patient_disposition",
+      "discharge_year",
+      "ccsr_diagnosis_code",
+      "ccsr_diagnosis_description",
+      "ccsr_procedure_code",
+      "ccsr_procedure_description",
+      "apr_drg_code",
+      "apr_drg_description",
+      "apr_mdc_code",
+      "apr_mdc_description",
+      "apr_severity_of_illness_code",
+      "apr_severity_of_illness",
+      "apr_risk_of_mortality",
+      "apr_medical_surgical",
+      "payment_typology_1",
+      "payment_typology_2",
+      "payment_typology_3",
+      "birth_weight",
+      "emergency_department_indicator",
+      "total_charges",
+      "total_costs"
+    ],
+    "rows": 635606,
+    "age_groups": {
+      "0-17": 159975,
+      "30-49": 193421,
+      "50-69": 154328,
+      "70 or Older": 21072,
+      "18-29": 106810
+    }
+  }
+}

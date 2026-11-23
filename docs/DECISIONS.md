@@ -16,6 +16,10 @@
 
 **Accepted:** Preserve official CMS financial archives and HHS national Parquet releases. Extract exact five-state CMS workbook lines with source provenance and validate totals separately from overlapping detail. Use Parquet for large HHS data and verify published checksums. Do not label provider-attributed national records as five-state or age-specific until justified by the available data. Avoid unfiltered drug placeholder sums and avoid double-counting across payment sources.
 
+## 005 — Provider geography and community context (2026-11-23)
+
+**Accepted:** Preserve provider enrollment segments with their state, dates and plan/status fields. Use overlap and explicit ambiguity checks for provider-level geographic exploration. Do not assume one NPI identifies a single state. Join HRSA and Census on exact five-character county-equivalent FIPS. Use the official ACS bulk files when an API key is unavailable. NY discharge analysis is a single-state sub-study until comparable records are secured for other states.
+
 ## Decision template
 
 Record date, title, status, problem, considered options, selected approach, rationale, implications, verification and related commit or issue.

@@ -15,6 +15,7 @@ The current implemented prototype is pediatric: it identifies a missing-wellness
 - [Development instructions](AGENTS.md)
 - [Public data foundation — acquisition and database](docs/PUBLIC_DATA_FOUNDATION.md)
 - [Spending data foundation — official downloads and verified extraction](docs/SPENDING_DATA_FOUNDATION.md)
+- [Provider enrollment, hospital and county context data](docs/CONTEXT_DATA_FOUNDATION.md)
 
 ## Five-state public data foundation
 

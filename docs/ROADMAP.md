@@ -4,7 +4,7 @@
 
 The platform covers both pediatric and adult Medicaid populations in NY, NJ, MD, VA and PA. Start with public data acquisition, a common state-aware data schema, quality assessment, and age-appropriate population measures. Develop all five modules defined in the [project scope](planning/PROJECT_SCOPE.md). Expand to longitudinal individual-level analysis when authorized data are available.
 
-**Milestone 1 status — in progress:** CMS quality and enrollment acquisition and SQLite database foundation complete ([documentation](PUBLIC_DATA_FOUNDATION.md)); CMS-64 and HHS provider spending releases acquired and verified ([spending documentation](SPENDING_DATA_FOUNDATION.md)). Next profile HHS, acquire provider geography and hospital sources, and integrate CMS financial data. Five-state expenditure and utilization analyses are pending.
+**Milestone 1 status — in progress:** CMS quality and enrollment acquisition and SQLite database foundation complete ([documentation](PUBLIC_DATA_FOUNDATION.md)); CMS-64 and HHS provider spending releases acquired and verified ([spending documentation](SPENDING_DATA_FOUNDATION.md)); provider enrollment, NY hospital discharges and five-state county context acquired ([context documentation](CONTEXT_DATA_FOUNDATION.md)). Next profile HHS, evaluate geographic attribution and integrate CMS financial and county data. Four states' discharge-level data and TAF access remain pending.
 
 ## Existing pediatric prototype development steps
 
