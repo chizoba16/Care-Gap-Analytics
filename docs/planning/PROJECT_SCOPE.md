@@ -22,8 +22,6 @@ Acquire the public HHS provider spending extracts, New York SPARCS and CMS quali
 
 ## Planning documents
 
-Earlier adult-focused research proposal and beta user guide are maintained as private planning references outside public Git history.
-
-This scope supersedes the adult-only population in those earlier planning documents.
+The research proposal (Version 2.0) and data strategy and beta user guide (Version 3.0) reflect the child-and-adult, five-state scope and documentation workflow. These planning documents are maintained separately outside public Git history.
 
 The beta will present documented measures and model results, with data source, population, time period and limitations. Restricted records must remain in authorized environments. The research plan calls for validation and independent beta feedback before any claims of impact or savings.
