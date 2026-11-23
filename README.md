@@ -13,6 +13,11 @@ The current implemented prototype is pediatric: it identifies a missing-wellness
 - [Research and architecture decisions](docs/DECISIONS.md)
 - [Model experiment register](docs/EXPERIMENTS.md)
 - [Development instructions](AGENTS.md)
+- [Public data foundation — acquisition and database](docs/PUBLIC_DATA_FOUNDATION.md)
+
+## Five-state public data foundation
+
+The first acquisition increment has retrieved official CMS quality and enrollment data for all five states. Run `python acquire_public_data.py` to retrieve the current source release or `python acquire_public_data.py --offline` to rebuild from local snapshots. See the [acquisition report](reports/public_data_acquisition.json) for observed coverage and validation. The initial SQLite database is local under `data/processed/`.
 
 ## Current result
 

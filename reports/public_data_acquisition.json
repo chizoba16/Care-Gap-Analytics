@@ -1,0 +1,851 @@
+{
+  "built_at_utc": "2026-11-23T04:57:47.643780+00:00",
+  "offline_rebuild": true,
+  "states": {
+    "NY": "New York",
+    "NJ": "New Jersey",
+    "MD": "Maryland",
+    "VA": "Virginia",
+    "PA": "Pennsylvania"
+  },
+  "datasets": {
+    "quality": {
+      "dataset_id": "a5023394-ab10-465b-bb4a-7de5ac98d90c",
+      "rows": 1142,
+      "periods": [
+        "2024"
+      ],
+      "columns": [
+        "cga_state",
+        "state",
+        "domain",
+        "reporting_program",
+        "measure_name",
+        "measure_abbreviation",
+        "measure_type",
+        "rate_definition",
+        "core_set_year",
+        "population",
+        "methodology",
+        "state_rate",
+        "number_of_states_reporting",
+        "mean",
+        "median",
+        "bottom_quartile",
+        "top_quartile",
+        "notes",
+        "source",
+        "statespecific_comments",
+        "rate_used_in_calculating_state_mean_and_median"
+      ],
+      "state_rows": {
+        "NY": 213,
+        "NJ": 151,
+        "MD": 201,
+        "VA": 239,
+        "PA": 338
+      },
+      "source_responses": {
+        "NY": {
+          "url": "https://data.medicaid.gov/api/1/datastore/query/a5023394-ab10-465b-bb4a-7de5ac98d90c/0?conditions%5B0%5D%5Bproperty%5D=state&conditions%5B0%5D%5Bvalue%5D=New+York&conditions%5B0%5D%5Boperator%5D=%3D&limit=500",
+          "file": "data/raw/cms/quality_NY.json",
+          "bytes": 243690,
+          "sha256": "70e30fcc8dd2ae6dbca961666674a971481a95302d936eb07a89d95deb16d228",
+          "rows": 213,
+          "snapshot_file_modified_utc": "2026-11-23T04:56:36.617025+00:00"
+        },
+        "NJ": {
+          "url": "https://data.medicaid.gov/api/1/datastore/query/a5023394-ab10-465b-bb4a-7de5ac98d90c/0?conditions%5B0%5D%5Bproperty%5D=state&conditions%5B0%5D%5Bvalue%5D=New+Jersey&conditions%5B0%5D%5Boperator%5D=%3D&limit=500",
+          "file": "data/raw/cms/quality_NJ.json",
+          "bytes": 241438,
+          "sha256": "2a23ee5d147d738bebafc31ccc710f0d9abe5644ae69f66615f675723144fdc9",
+          "rows": 151,
+          "snapshot_file_modified_utc": "2026-11-23T04:56:36.351401+00:00"
+        },
+        "MD": {
+          "url": "https://data.medicaid.gov/api/1/datastore/query/a5023394-ab10-465b-bb4a-7de5ac98d90c/0?conditions%5B0%5D%5Bproperty%5D=state&conditions%5B0%5D%5Bvalue%5D=Maryland&conditions%5B0%5D%5Boperator%5D=%3D&limit=500",
+          "file": "data/raw/cms/quality_MD.json",
+          "bytes": 224246,
+          "sha256": "6a90d60dc1b052c298565ea39b900cf813d719b319a0beca84dbbfad1adf7c49",
+          "rows": 201,
+          "snapshot_file_modified_utc": "2026-11-23T04:56:36.862916+00:00"
+        },
+        "VA": {
+          "url": "https://data.medicaid.gov/api/1/datastore/query/a5023394-ab10-465b-bb4a-7de5ac98d90c/0?conditions%5B0%5D%5Bproperty%5D=state&conditions%5B0%5D%5Bvalue%5D=Virginia&conditions%5B0%5D%5Boperator%5D=%3D&limit=500",
+          "file": "data/raw/cms/quality_VA.json",
+          "bytes": 270117,
+          "sha256": "e90981e49815a14cc96b556920d871a0e74e1e91d507134d8c31140b7041aedb",
+          "rows": 239,
+          "snapshot_file_modified_utc": "2026-11-23T04:56:36.752248+00:00"
+        },
+        "PA": {
+          "url": "https://data.medicaid.gov/api/1/datastore/query/a5023394-ab10-465b-bb4a-7de5ac98d90c/0?conditions%5B0%5D%5Bproperty%5D=state&conditions%5B0%5D%5Bvalue%5D=Pennsylvania&conditions%5B0%5D%5Boperator%5D=%3D&limit=500",
+          "file": "data/raw/cms/quality_PA.json",
+          "bytes": 451530,
+          "sha256": "d77f54f5580b1b1914bb74074cdd9f7c4e2fed9e961e9b85de9ff8a434fb3f28",
+          "rows": 338,
+          "snapshot_file_modified_utc": "2026-11-23T04:56:36.471448+00:00"
+        }
+      },
+      "output": "data/processed/cms_quality_five_states.csv",
+      "output_sha256": "634dbcfb1aee608ea06aaa87768a079e59ca021eb9be390b00eabbc9fb960d19",
+      "missing_values": {
+        "cga_state": 0,
+        "state": 0,
+        "domain": 0,
+        "reporting_program": 0,
+        "measure_name": 0,
+        "measure_abbreviation": 0,
+        "measure_type": 0,
+        "rate_definition": 0,
+        "core_set_year": 0,
+        "population": 0,
+        "methodology": 0,
+        "state_rate": 0,
+        "number_of_states_reporting": 0,
+        "mean": 0,
+        "median": 0,
+        "bottom_quartile": 0,
+        "top_quartile": 0,
+        "notes": 1048,
+        "source": 0,
+        "statespecific_comments": 0,
+        "rate_used_in_calculating_state_mean_and_median": 0
+      },
+      "reporting_programs": [
+        "Adult Core Set",
+        "Child Core Set"
+      ],
+      "state_rate_flags": {
+        "NPR": 22,
+        "DS": 37,
+        "#": 14,
+        "NA": 21
+      },
+      "program_rows": {
+        "Child Core Set": 741,
+        "Adult Core Set": 401
+      },
+      "schema": {
+        "5e03aec3-aad4-5515-aaa2-1ef7a50b4b87": {
+          "fields": {
+            "state": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "State"
+            },
+            "domain": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Domain"
+            },
+            "reporting_program": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Reporting Program"
+            },
+            "measure_name": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Measure Name"
+            },
+            "measure_abbreviation": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Measure Abbreviation"
+            },
+            "measure_type": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Measure Type"
+            },
+            "rate_definition": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Rate Definition"
+            },
+            "core_set_year": {
+              "type": "int",
+              "mysql_type": "int",
+              "description": "Core Set Year"
+            },
+            "population": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Population"
+            },
+            "methodology": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Methodology"
+            },
+            "state_rate": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "State Rate"
+            },
+            "number_of_states_reporting": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Number of States Reporting"
+            },
+            "mean": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Mean"
+            },
+            "median": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Median"
+            },
+            "bottom_quartile": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Bottom Quartile"
+            },
+            "top_quartile": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Top Quartile"
+            },
+            "notes": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Notes"
+            },
+            "source": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Source"
+            },
+            "statespecific_comments": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "State-Specific Comments"
+            },
+            "rate_used_in_calculating_state_mean_and_median": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Rate Used in Calculating State Mean and Median"
+            }
+          }
+        }
+      }
+    },
+    "enrollment": {
+      "dataset_id": "6165f45b-ca93-5bb5-9d06-db29c692a360",
+      "rows": 1100,
+      "periods": [
+        "201309",
+        "201706",
+        "201707",
+        "201708",
+        "201709",
+        "201710",
+        "201711",
+        "201712",
+        "201801",
+        "201802",
+        "201803",
+        "201804",
+        "201805",
+        "201806",
+        "201807",
+        "201808",
+        "201809",
+        "201810",
+        "201811",
+        "201812",
+        "201901",
+        "201902",
+        "201903",
+        "201904",
+        "201905",
+        "201906",
+        "201907",
+        "201908",
+        "201909",
+        "201910",
+        "201911",
+        "201912",
+        "202001",
+        "202002",
+        "202003",
+        "202004",
+        "202005",
+        "202006",
+        "202007",
+        "202008",
+        "202009",
+        "202010",
+        "202011",
+        "202012",
+        "202101",
+        "202102",
+        "202103",
+        "202104",
+        "202105",
+        "202106",
+        "202107",
+        "202108",
+        "202109",
+        "202110",
+        "202111",
+        "202112",
+        "202201",
+        "202202",
+        "202203",
+        "202204",
+        "202205",
+        "202206",
+        "202207",
+        "202208",
+        "202209",
+        "202210",
+        "202211",
+        "202212",
+        "202301",
+        "202302",
+        "202303",
+        "202304",
+        "202305",
+        "202306",
+        "202307",
+        "202308",
+        "202309",
+        "202310",
+        "202311",
+        "202312",
+        "202401",
+        "202402",
+        "202403",
+        "202404",
+        "202405",
+        "202406",
+        "202407",
+        "202408",
+        "202409",
+        "202410",
+        "202411",
+        "202412",
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512",
+        "202601",
+        "202602",
+        "202603",
+        "202604",
+        "202605",
+        "202606",
+        "202607"
+      ],
+      "columns": [
+        "cga_state",
+        "state_abbreviation",
+        "state_name",
+        "reporting_period",
+        "state_expanded_medicaid",
+        "preliminary_or_updated",
+        "final_report",
+        "new_applications_submitted_to_medicaid_and_chip_agencies",
+        "new_applications_submitted_to_medicaid_and_chip_agencies__f_85d7",
+        "applications_for_financial_assistance_submitted_to_the_stat_104d",
+        "applications_for_financial_assistance_submitted_to_the_stat_c640",
+        "total_applications_for_financial_assistance_submitted_at_st_d6fa",
+        "total_applications_for_financial_assistance_submitted_at_st_9919",
+        "individuals_determined_eligible_for_medicaid_at_application",
+        "individuals_determined_eligible_for_medicaid_at_application_4f96",
+        "individuals_determined_eligible_for_chip_at_application",
+        "individuals_determined_eligible_for_chip_at_application__fo_e28a",
+        "total_medicaid_and_chip_determinations",
+        "total_medicaid_and_chip_determinations__footnotes",
+        "medicaid_and_chip_child_enrollment",
+        "medicaid_and_chip_child_enrollment__footnotes",
+        "total_medicaid_and_chip_enrollment",
+        "total_medicaid_and_chip_enrollment__footnotes",
+        "total_medicaid_enrollment",
+        "total_medicaid_enrollment__footnotes",
+        "total_chip_enrollment",
+        "total_chip_enrollment__footnotes",
+        "total_adult_medicaid_enrollment",
+        "total_adult_medicaid_enrollment__footnotes",
+        "total_medicaid_and_chip_determinations_processed_in_less_th_1e84",
+        "total_medicaid_and_chip_determinations_processed_in_less_th_46c2",
+        "total_medicaid_and_chip_determinations_processed_between_24_756e",
+        "total_medicaid_and_chip_determinations_processed_between_24_cf22",
+        "total_medicaid_and_chip_determinations_processed_between_8__a7a5",
+        "total_medicaid_and_chip_determinations_processed_between_8__e6e5",
+        "total_medicaid_and_chip_determinations_processed_between_31_a42c",
+        "total_medicaid_and_chip_determinations_processed_between_31_49fa",
+        "total_medicaid_and_chip_determinations_processed_in_more_th_a7ec",
+        "total_medicaid_and_chip_determinations_processed_in_more_th_bfce",
+        "total_call_center_volume_number_of_calls",
+        "total_call_center_volume_number_of_calls__footnotes",
+        "average_call_center_wait_time_minutes",
+        "average_call_center_wait_time_minutes__footnotes",
+        "average_call_center_abandonment_rate",
+        "average_call_center_abandonment_rate__footnotes"
+      ],
+      "state_rows": {
+        "NY": 220,
+        "NJ": 220,
+        "MD": 220,
+        "VA": 220,
+        "PA": 220
+      },
+      "source_responses": {
+        "NY": {
+          "url": "https://data.medicaid.gov/api/1/datastore/query/6165f45b-ca93-5bb5-9d06-db29c692a360/0?conditions%5B0%5D%5Bproperty%5D=state_abbreviation&conditions%5B0%5D%5Bvalue%5D=NY&conditions%5B0%5D%5Boperator%5D=%3D&limit=500",
+          "file": "data/raw/cms/enrollment_NY.json",
+          "bytes": 617591,
+          "sha256": "f9db31aa756ba5d02ee8b68a0cdcea5c62e407fbe94d7955794a8fa68cca78cf",
+          "rows": 220,
+          "snapshot_file_modified_utc": "2026-11-23T04:56:40.744164+00:00"
+        },
+        "NJ": {
+          "url": "https://data.medicaid.gov/api/1/datastore/query/6165f45b-ca93-5bb5-9d06-db29c692a360/0?conditions%5B0%5D%5Bproperty%5D=state_abbreviation&conditions%5B0%5D%5Bvalue%5D=NJ&conditions%5B0%5D%5Boperator%5D=%3D&limit=500",
+          "file": "data/raw/cms/enrollment_NJ.json",
+          "bytes": 650325,
+          "sha256": "a929211b2678b258b38a4306e086de559f816a047dfe617123af38a40848f84d",
+          "rows": 220,
+          "snapshot_file_modified_utc": "2026-11-23T04:56:39.551041+00:00"
+        },
+        "MD": {
+          "url": "https://data.medicaid.gov/api/1/datastore/query/6165f45b-ca93-5bb5-9d06-db29c692a360/0?conditions%5B0%5D%5Bproperty%5D=state_abbreviation&conditions%5B0%5D%5Bvalue%5D=MD&conditions%5B0%5D%5Boperator%5D=%3D&limit=500",
+          "file": "data/raw/cms/enrollment_MD.json",
+          "bytes": 637937,
+          "sha256": "a459b418e8118c78e7960a3ddb62333ea29fb4e7e9b2dc08da16225de78794e8",
+          "rows": 220,
+          "snapshot_file_modified_utc": "2026-11-23T04:56:40.181190+00:00"
+        },
+        "VA": {
+          "url": "https://data.medicaid.gov/api/1/datastore/query/6165f45b-ca93-5bb5-9d06-db29c692a360/0?conditions%5B0%5D%5Bproperty%5D=state_abbreviation&conditions%5B0%5D%5Bvalue%5D=VA&conditions%5B0%5D%5Boperator%5D=%3D&limit=500",
+          "file": "data/raw/cms/enrollment_VA.json",
+          "bytes": 579156,
+          "sha256": "70dae9497e55e1323b3b901cce71e10de4822a3c45d53d7d5b1930bdd4a721ee",
+          "rows": 220,
+          "snapshot_file_modified_utc": "2026-11-23T04:56:40.899437+00:00"
+        },
+        "PA": {
+          "url": "https://data.medicaid.gov/api/1/datastore/query/6165f45b-ca93-5bb5-9d06-db29c692a360/0?conditions%5B0%5D%5Bproperty%5D=state_abbreviation&conditions%5B0%5D%5Bvalue%5D=PA&conditions%5B0%5D%5Boperator%5D=%3D&limit=500",
+          "file": "data/raw/cms/enrollment_PA.json",
+          "bytes": 647045,
+          "sha256": "854f1c471773134d02c3d5cb9d2fad174ff450ffb36347e19bdff622f5c59d34",
+          "rows": 220,
+          "snapshot_file_modified_utc": "2026-11-23T04:56:40.965700+00:00"
+        }
+      },
+      "output": "data/processed/cms_enrollment_five_states.csv",
+      "output_sha256": "8029e116b56aaafbda66fe2ff6de3ddae160deadbdd268b552ab4025dcf62d2c",
+      "missing_values": {
+        "cga_state": 0,
+        "state_abbreviation": 0,
+        "state_name": 0,
+        "reporting_period": 0,
+        "state_expanded_medicaid": 0,
+        "preliminary_or_updated": 0,
+        "final_report": 0,
+        "new_applications_submitted_to_medicaid_and_chip_agencies": 5,
+        "new_applications_submitted_to_medicaid_and_chip_agencies__f_85d7": 651,
+        "applications_for_financial_assistance_submitted_to_the_stat_104d": 5,
+        "applications_for_financial_assistance_submitted_to_the_stat_c640": 862,
+        "total_applications_for_financial_assistance_submitted_at_st_d6fa": 5,
+        "total_applications_for_financial_assistance_submitted_at_st_9919": 413,
+        "individuals_determined_eligible_for_medicaid_at_application": 5,
+        "individuals_determined_eligible_for_medicaid_at_application_4f96": 344,
+        "individuals_determined_eligible_for_chip_at_application": 5,
+        "individuals_determined_eligible_for_chip_at_application__fo_e28a": 713,
+        "total_medicaid_and_chip_determinations": 5,
+        "total_medicaid_and_chip_determinations__footnotes": 344,
+        "medicaid_and_chip_child_enrollment": 5,
+        "medicaid_and_chip_child_enrollment__footnotes": 1053,
+        "total_medicaid_and_chip_enrollment": 0,
+        "total_medicaid_and_chip_enrollment__footnotes": 1048,
+        "total_medicaid_enrollment": 5,
+        "total_medicaid_enrollment__footnotes": 1053,
+        "total_chip_enrollment": 5,
+        "total_chip_enrollment__footnotes": 1100,
+        "total_adult_medicaid_enrollment": 855,
+        "total_adult_medicaid_enrollment__footnotes": 1100,
+        "total_medicaid_and_chip_determinations_processed_in_less_th_1e84": 435,
+        "total_medicaid_and_chip_determinations_processed_in_less_th_46c2": 848,
+        "total_medicaid_and_chip_determinations_processed_between_24_756e": 435,
+        "total_medicaid_and_chip_determinations_processed_between_24_cf22": 848,
+        "total_medicaid_and_chip_determinations_processed_between_8__a7a5": 435,
+        "total_medicaid_and_chip_determinations_processed_between_8__e6e5": 848,
+        "total_medicaid_and_chip_determinations_processed_between_31_a42c": 435,
+        "total_medicaid_and_chip_determinations_processed_between_31_49fa": 848,
+        "total_medicaid_and_chip_determinations_processed_in_more_th_a7ec": 435,
+        "total_medicaid_and_chip_determinations_processed_in_more_th_bfce": 848,
+        "total_call_center_volume_number_of_calls": 695,
+        "total_call_center_volume_number_of_calls__footnotes": 730,
+        "average_call_center_wait_time_minutes": 695,
+        "average_call_center_wait_time_minutes__footnotes": 730,
+        "average_call_center_abandonment_rate": 695,
+        "average_call_center_abandonment_rate__footnotes": 730
+      },
+      "final_rows": 550,
+      "final_periods": [
+        "201309",
+        "201706",
+        "201707",
+        "201708",
+        "201709",
+        "201710",
+        "201711",
+        "201712",
+        "201801",
+        "201802",
+        "201803",
+        "201804",
+        "201805",
+        "201806",
+        "201807",
+        "201808",
+        "201809",
+        "201810",
+        "201811",
+        "201812",
+        "201901",
+        "201902",
+        "201903",
+        "201904",
+        "201905",
+        "201906",
+        "201907",
+        "201908",
+        "201909",
+        "201910",
+        "201911",
+        "201912",
+        "202001",
+        "202002",
+        "202003",
+        "202004",
+        "202005",
+        "202006",
+        "202007",
+        "202008",
+        "202009",
+        "202010",
+        "202011",
+        "202012",
+        "202101",
+        "202102",
+        "202103",
+        "202104",
+        "202105",
+        "202106",
+        "202107",
+        "202108",
+        "202109",
+        "202110",
+        "202111",
+        "202112",
+        "202201",
+        "202202",
+        "202203",
+        "202204",
+        "202205",
+        "202206",
+        "202207",
+        "202208",
+        "202209",
+        "202210",
+        "202211",
+        "202212",
+        "202301",
+        "202302",
+        "202303",
+        "202304",
+        "202305",
+        "202306",
+        "202307",
+        "202308",
+        "202309",
+        "202310",
+        "202311",
+        "202312",
+        "202401",
+        "202402",
+        "202403",
+        "202404",
+        "202405",
+        "202406",
+        "202407",
+        "202408",
+        "202409",
+        "202410",
+        "202411",
+        "202412",
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512",
+        "202601",
+        "202602",
+        "202603",
+        "202604",
+        "202605",
+        "202606"
+      ],
+      "schema": {
+        "f4d1d0b1-d27d-53aa-9902-b4425dbad6b3": {
+          "fields": {
+            "state_abbreviation": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "State Abbreviation"
+            },
+            "state_name": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "State Name"
+            },
+            "reporting_period": {
+              "type": "int",
+              "mysql_type": "int",
+              "description": "Reporting Period"
+            },
+            "state_expanded_medicaid": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "State Expanded Medicaid"
+            },
+            "preliminary_or_updated": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Preliminary or Updated"
+            },
+            "final_report": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Final Report"
+            },
+            "new_applications_submitted_to_medicaid_and_chip_agencies": {
+              "type": "int",
+              "mysql_type": "int",
+              "description": "New Applications Submitted to Medicaid and CHIP Agencies"
+            },
+            "new_applications_submitted_to_medicaid_and_chip_agencies__f_85d7": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "New Applications Submitted to Medicaid and CHIP Agencies - footnotes"
+            },
+            "applications_for_financial_assistance_submitted_to_the_stat_104d": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Applications for Financial Assistance Submitted to the State Based Marketplace"
+            },
+            "applications_for_financial_assistance_submitted_to_the_stat_c640": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Applications for Financial Assistance Submitted to the State Based Marketplace - footnotes"
+            },
+            "total_applications_for_financial_assistance_submitted_at_st_d6fa": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Applications for Financial Assistance Submitted at State Level"
+            },
+            "total_applications_for_financial_assistance_submitted_at_st_9919": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Applications for Financial Assistance Submitted at State Level - footnotes"
+            },
+            "individuals_determined_eligible_for_medicaid_at_application": {
+              "type": "int",
+              "mysql_type": "int",
+              "description": "Individuals Determined Eligible for Medicaid at Application"
+            },
+            "individuals_determined_eligible_for_medicaid_at_application_4f96": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Individuals Determined Eligible for Medicaid at Application - footnotes"
+            },
+            "individuals_determined_eligible_for_chip_at_application": {
+              "type": "int",
+              "mysql_type": "int",
+              "description": "Individuals Determined Eligible for CHIP at Application"
+            },
+            "individuals_determined_eligible_for_chip_at_application__fo_e28a": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Individuals Determined Eligible for CHIP at Application - footnotes"
+            },
+            "total_medicaid_and_chip_determinations": {
+              "type": "int",
+              "mysql_type": "int",
+              "description": "Total Medicaid and CHIP Determinations"
+            },
+            "total_medicaid_and_chip_determinations__footnotes": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Determinations - footnotes"
+            },
+            "medicaid_and_chip_child_enrollment": {
+              "type": "int",
+              "mysql_type": "int",
+              "description": "Medicaid and CHIP Child Enrollment"
+            },
+            "medicaid_and_chip_child_enrollment__footnotes": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Medicaid and CHIP Child Enrollment - footnotes"
+            },
+            "total_medicaid_and_chip_enrollment": {
+              "type": "int",
+              "mysql_type": "int",
+              "description": "Total Medicaid and CHIP Enrollment"
+            },
+            "total_medicaid_and_chip_enrollment__footnotes": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Enrollment - footnotes"
+            },
+            "total_medicaid_enrollment": {
+              "type": "int",
+              "mysql_type": "int",
+              "description": "Total Medicaid Enrollment"
+            },
+            "total_medicaid_enrollment__footnotes": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid Enrollment - footnotes"
+            },
+            "total_chip_enrollment": {
+              "type": "int",
+              "mysql_type": "int",
+              "description": "Total CHIP Enrollment"
+            },
+            "total_chip_enrollment__footnotes": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total CHIP Enrollment - footnotes"
+            },
+            "total_adult_medicaid_enrollment": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Adult Medicaid Enrollment"
+            },
+            "total_adult_medicaid_enrollment__footnotes": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Adult Medicaid Enrollment - footnotes"
+            },
+            "total_medicaid_and_chip_determinations_processed_in_less_th_1e84": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Determinations Processed in Less than 24 Hours"
+            },
+            "total_medicaid_and_chip_determinations_processed_in_less_th_46c2": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Determinations Processed in Less than 24 Hours - footnotes"
+            },
+            "total_medicaid_and_chip_determinations_processed_between_24_756e": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Determinations Processed Between 24 Hours and 7 Days"
+            },
+            "total_medicaid_and_chip_determinations_processed_between_24_cf22": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Determinations Processed Between 24 Hours and 7 Days - footnotes"
+            },
+            "total_medicaid_and_chip_determinations_processed_between_8__a7a5": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Determinations Processed Between 8 Days and 30 Days"
+            },
+            "total_medicaid_and_chip_determinations_processed_between_8__e6e5": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Determinations Processed Between 8 Days and 30 Days - footnotes"
+            },
+            "total_medicaid_and_chip_determinations_processed_between_31_a42c": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Determinations Processed between 31 days and 45 days"
+            },
+            "total_medicaid_and_chip_determinations_processed_between_31_49fa": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Determinations Processed between 31 days and 45 days - footnotes"
+            },
+            "total_medicaid_and_chip_determinations_processed_in_more_th_a7ec": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Determinations Processed in More than 45 Days"
+            },
+            "total_medicaid_and_chip_determinations_processed_in_more_th_bfce": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Medicaid and CHIP Determinations Processed in More than 45 Days - footnotes"
+            },
+            "total_call_center_volume_number_of_calls": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Call Center Volume (Number of Calls)"
+            },
+            "total_call_center_volume_number_of_calls__footnotes": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Total Call Center Volume (Number of Calls) - footnotes"
+            },
+            "average_call_center_wait_time_minutes": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Average Call Center Wait Time (Minutes)"
+            },
+            "average_call_center_wait_time_minutes__footnotes": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Average Call Center Wait Time (Minutes) - footnotes"
+            },
+            "average_call_center_abandonment_rate": {
+              "type": "numeric",
+              "precision": "5",
+              "scale": "4",
+              "mysql_type": "decimal",
+              "description": "Average Call Center Abandonment Rate"
+            },
+            "average_call_center_abandonment_rate__footnotes": {
+              "type": "text",
+              "mysql_type": "text",
+              "description": "Average Call Center Abandonment Rate - footnotes"
+            }
+          },
+          "indexes": {
+            "record_number": [
+              "record_number"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "database": {
+    "path": "data/processed/cga_public.sqlite",
+    "integrity": "ok",
+    "quality_reported_rows": 1048,
+    "enrollment_final_rows": 550
+  }
+}

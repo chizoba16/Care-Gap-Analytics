@@ -4,6 +4,8 @@
 
 The platform covers both pediatric and adult Medicaid populations in NY, NJ, MD, VA and PA. Start with public data acquisition, a common state-aware data schema, quality assessment, and age-appropriate population measures. Develop all five modules defined in the [project scope](planning/PROJECT_SCOPE.md). Expand to longitudinal individual-level analysis when authorized data are available.
 
+**Milestone 1 status — in progress:** CMS quality and enrollment acquisition and SQLite database foundation complete ([documentation](PUBLIC_DATA_FOUNDATION.md)). Next acquire and profile expenditure, provider and hospital datasets. Five-state expenditure and utilization analyses are pending.
+
 ## Existing pediatric prototype development steps
 
 1. Obtain a larger pediatric synthetic cohort with documented Medicaid coverage; freeze generator version, configuration and seed. Do not broaden payer eligibility solely to make the model train.

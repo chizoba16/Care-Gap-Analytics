@@ -8,6 +8,10 @@
 
 **Accepted:** Start with publicly accessible actual Medicaid spending, quality and discharge data. Train aggregate forecasts and discharge-level models only when the required fields and adequate samples are available. Pursue institutional authorization for longitudinal claims. Synthetic records may support testing; synthetic performance will be identified explicitly.
 
+## 003 — Initial source and analytical database (2026-11-22)
+
+**Accepted:** Start with CMS quality and enrollment data because both provide explicit state fields and accessible, manageable public records. Preserve raw JSON, create validated CSV outputs and a local SQLite database for the initial research pipeline. Retain original source flags and versions; use final enrollment reports for longitudinal state trends. This provides a reproducible local foundation that can later migrate to PostgreSQL. Provider spending data requires separate geographic and population assessment.
+
 ## Decision template
 
 Record date, title, status, problem, considered options, selected approach, rationale, implications, verification and related commit or issue.
