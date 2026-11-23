@@ -1,6 +1,18 @@
-# Medicaid Child Care Gap Analytics
+# Care Gap Analytics
 
-Research prototype supporting improved coordination of Medicaid-funded healthcare for children. Identifies a missing-wellness-record proxy and provides a trainable 90-day emergency department utilization pipeline. It does not establish avoidable use, medical necessity, cost savings, or clinical effectiveness.
+Research platform under development supporting improved coordination of Medicaid-funded healthcare for children (ages 0–17) and adults (ages 18+) in New York, New Jersey, Maryland, Virginia and Pennsylvania. The planned platform includes care gap detection, predictive utilization and spending, utilization efficiency, resource allocation, and population health analytics. See the [project scope](docs/planning/PROJECT_SCOPE.md) for the five-state data strategy and age-specific approach.
+
+The current implemented prototype is pediatric: it identifies a missing-wellness-record proxy and provides a trainable 90-day emergency department utilization pipeline. It does not establish avoidable use, medical necessity, cost savings, or clinical effectiveness. The adult and five-state data pipelines and models are planned, pending acquisition and validation.
+
+## Project documentation
+
+- [Five-state project scope](docs/planning/PROJECT_SCOPE.md)
+- [Development roadmap](docs/ROADMAP.md)
+- [Development log](docs/DEVELOPMENT_LOG.md)
+- [Data source register](docs/DATA_REGISTER.md)
+- [Research and architecture decisions](docs/DECISIONS.md)
+- [Model experiment register](docs/EXPERIMENTS.md)
+- [Development instructions](AGENTS.md)
 
 ## Current result
 

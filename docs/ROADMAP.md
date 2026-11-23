@@ -1,5 +1,11 @@
 # Development and evidence roadmap
 
+## Current project direction
+
+The platform covers both pediatric and adult Medicaid populations in NY, NJ, MD, VA and PA. Start with public data acquisition, a common state-aware data schema, quality assessment, and age-appropriate population measures. Develop all five modules defined in the [project scope](planning/PROJECT_SCOPE.md). Expand to longitudinal individual-level analysis when authorized data are available.
+
+## Existing pediatric prototype development steps
+
 1. Obtain a larger pediatric synthetic cohort with documented Medicaid coverage; freeze generator version, configuration and seed. Do not broaden payer eligibility solely to make the model train.
 2. Add a current Synthea date-based enrollment adapter; validate mappings. Add attrition counts, finer data-quality checks and explicit dataset observation end.
 3. Implement clinically reviewed, version-specific well-care measures and licensed value sets where needed. Add infant-specific logic separately.
