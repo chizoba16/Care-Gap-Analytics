@@ -1,0 +1,141 @@
+{
+  "built_at_utc": "2026-11-23T05:07:17.195685+00:00",
+  "states": {
+    "NY": "New York",
+    "NJ": "New Jersey",
+    "MD": "Maryland",
+    "VA": "Virginia",
+    "PA": "Pennsylvania"
+  },
+  "fiscal_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "cms64_archives": [
+    {
+      "url": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2018.zip",
+      "path": "data/raw/cms64/financial-management-report-fy2018.zip",
+      "bytes": 1000214,
+      "sha256": "d0a23812c85f63bcaa171636a9fc775330a1edcc2825a722871f33faa7f42d43",
+      "members": [
+        "FY 2018 FMR CHIP EXPENDITURES.xlsx",
+        "FY 2018 FMR NET EXPENDITURES.xlsx"
+      ],
+      "detail_rows": 1430,
+      "total_rows": 10
+    },
+    {
+      "url": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2019.zip",
+      "path": "data/raw/cms64/financial-management-report-fy2019.zip",
+      "bytes": 997922,
+      "sha256": "49b220fccd2d42edc4cf54db0a6b3686dd5753ea894d3240bd616915b187dc8f",
+      "members": [
+        "FY 2019 CHIP NET EXPENDITURES.xlsx",
+        "FY 2019 FMR NET EXPENDITURES.xlsx"
+      ],
+      "detail_rows": 1445,
+      "total_rows": 10
+    },
+    {
+      "url": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2020.zip",
+      "path": "data/raw/cms64/financial-management-report-fy2020.zip",
+      "bytes": 1065076,
+      "sha256": "b9d4e802b573f301b50668801bbd8cff571de8087b9710ff15914f9f7be32a9f",
+      "members": [
+        "FY 2020 FMR CHIP NET EXPENDITURES.xlsx",
+        "FY 2020 FMR NET EXPENDITURES.xlsx"
+      ],
+      "detail_rows": 1465,
+      "total_rows": 10
+    },
+    {
+      "url": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2021.zip",
+      "path": "data/raw/cms64/financial-management-report-fy2021.zip",
+      "bytes": 1157049,
+      "sha256": "4b27932ccf90f20cfed9e72b8641a01b51f60fdbbcbf92268041b1b82b7bb358",
+      "members": [
+        "FY 2021 CHIP FMR NET EXPENDITURES.xlsx",
+        "FY 2021 FMR NET EXPENDITURES.xlsx"
+      ],
+      "detail_rows": 1590,
+      "total_rows": 10
+    },
+    {
+      "url": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2022.zip",
+      "path": "data/raw/cms64/financial-management-report-fy2022.zip",
+      "bytes": 1048515,
+      "sha256": "70a5e877efe68e40117543d6544b9835309b107c7d1231029df446f3cf081d5b",
+      "members": [
+        "FY 2022 CHIP FMR NET EXPENDITURES.xlsx",
+        "FY 2022 FMR NET EXPENDITURES.xlsx"
+      ],
+      "detail_rows": 1645,
+      "total_rows": 10
+    },
+    {
+      "url": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2023.zip",
+      "path": "data/raw/cms64/financial-management-report-fy2023.zip",
+      "bytes": 1050665,
+      "sha256": "23242828ff7193bcda7e20a4d12ed077ca9ac8f8669c3d4d4b08cd55340fe903",
+      "members": [
+        "FY 2023 CHIP FMR NET EXPENDITURES.xlsx",
+        "FY 2023 FMR NET EXPENDITURES.xlsx"
+      ],
+      "detail_rows": 1670,
+      "total_rows": 10
+    },
+    {
+      "url": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip",
+      "path": "data/raw/cms64/financial-management-report-fy2024.zip",
+      "bytes": 1050237,
+      "sha256": "def068767bb0137aa7f14e4c17935cd0e71b3bcac2650ad18765f739d1acfd66",
+      "members": [
+        "FY 2024 FMR CHIP NET EXPENDITURES.xlsx",
+        "FY 2024 FMR NET EXPENDITURES.xlsx"
+      ],
+      "detail_rows": 1675,
+      "total_rows": 10
+    },
+    {
+      "url": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2025.zip",
+      "path": "data/raw/cms64/financial-management-report-fy2025.zip",
+      "bytes": 886522,
+      "sha256": "bd4abc80bc0f6cad38b5a281641d52044b71ee9dacd9acc75d77faab29480f4e",
+      "members": [
+        "FY 2025 FMR CHIP NET EXPENDITURES.xlsx",
+        "FY 2025 FMR NET EXPENDITURES.xlsx"
+      ],
+      "detail_rows": 1675,
+      "total_rows": 10
+    }
+  ],
+  "detail_rows": 12595,
+  "total_rows": 80,
+  "total_funding_reconciliation": "passed",
+  "outputs": {
+    "data/processed/cms64_five_state_detail.csv": "4b7b4a7ef6fa71ce8508537a87d6008b884bce6d6dd683a01f4e9dfd322a9d1b",
+    "data/processed/cms64_five_state_reported_totals.csv": "8868ef78887750f7f45c8b066d4bda6f5f89323e8a4a359625c92a950d8e1e9c"
+  },
+  "hhs": {
+    "medicaid-provider-spending.parquet": {
+      "url": "https://stopendataprod.blob.core.windows.net/datasets/medicaid-provider-spending/2026-02-09/dataset/medicaid-provider-spending.parquet",
+      "path": "data/raw/hhs/medicaid-provider-spending.parquet",
+      "bytes": 3072545478,
+      "sha256": "f646d426126638dd0177cb14a86bfe7d7e9ed6b081a3e1c270bfe5070fb3fb94",
+      "published_sha256_verified": true
+    },
+    "medicaid-provider-spending-ndc.parquet": {
+      "url": "https://stopendataprod.blob.core.windows.net/datasets/medicaid-provider-spending-ndc/2026-07-24/dataset/medicaid-provider-spending-ndc.parquet",
+      "path": "data/raw/hhs/medicaid-provider-spending-ndc.parquet",
+      "bytes": 234635252,
+      "sha256": "a8fe08f7bde9cb4090df1c9795428b57680f0ad643b9371dbf1490e871b7c782",
+      "published_sha256_verified": true
+    }
+  }
+}

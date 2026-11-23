@@ -12,6 +12,10 @@
 
 **Accepted:** Start with CMS quality and enrollment data because both provide explicit state fields and accessible, manageable public records. Preserve raw JSON, create validated CSV outputs and a local SQLite database for the initial research pipeline. Retain original source flags and versions; use final enrollment reports for longitudinal state trends. This provides a reproducible local foundation that can later migrate to PostgreSQL. Provider spending data requires separate geographic and population assessment.
 
+## 004 — Spending release handling (2026-11-23)
+
+**Accepted:** Preserve official CMS financial archives and HHS national Parquet releases. Extract exact five-state CMS workbook lines with source provenance and validate totals separately from overlapping detail. Use Parquet for large HHS data and verify published checksums. Do not label provider-attributed national records as five-state or age-specific until justified by the available data. Avoid unfiltered drug placeholder sums and avoid double-counting across payment sources.
+
 ## Decision template
 
 Record date, title, status, problem, considered options, selected approach, rationale, implications, verification and related commit or issue.

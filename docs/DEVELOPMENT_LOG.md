@@ -24,6 +24,14 @@ This chronological record documents completed work, evidence, decisions and next
 - **Limitations:** Aggregate quality data covers one reporting year; nonnumeric rates and historical missing adult enrollment fields remain explicitly identified. Spending data, hospital discharge data and restricted claims have yet to be acquired for this phase.
 - **Next:** Acquire CMS expenditure and HHS provider spending data; review geographic attribution before developing analytical measures.
 
+## 2026-11-23 — Milestone 1, expenditure and provider spending acquisition
+
+- **Completed:** Downloaded official CMS-64 FY 2018–2025 ZIP archives and both national HHS T-MSIS provider spending Parquet releases; produced five-state CMS financial detail and totals CSVs and a downloadable ZIP package.
+- **Results:** Eight archives, 12,595 five-state detail rows, 80 exact reported totals. HHS HCPCS 3,072,545,478 bytes and NDC 234,635,252 bytes.
+- **Verification:** All source ZIP integrity checks passed; HHS files match published SHA-256 and length; all 80 total lines reconcile with funding shares. Bundle passed ZIP integrity check; existing three unit tests passed.
+- **Limitations:** HHS extracts are national and lack beneficiary state/age attribution. CMS financial detail includes overlapping categories and adjustments. Full spending data has not yet been profiled or loaded into the analytical database.
+- **Next:** Profile HHS data efficiently, assess provider geography, integrate verified CMS financial tables and acquire hospital data.
+
 ## Entry template
 
 - Date and milestone:
