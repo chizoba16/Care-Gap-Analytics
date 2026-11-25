@@ -55,6 +55,14 @@ This chronological record documents completed work, evidence, decisions and next
 - **Limitations:** Aggregate published quality measures have distinct cohorts, methods, age ranges and units. No patient-level care-gap detection, individual risk prediction or model training performed.
 - **Next:** CMS-64 expenditure cleaning and reconciliation.
 
+## 2026-11-24 — Lab 03: CMS-64 expenditure Silver
+
+- **Completed:** Verified both input hashes against acquisition, profiled and cleaned 12,595 worksheet rows and 80 exact main net totals, implemented `clean_cms64.py`, CSV/Parquet outputs, `reports/cms64_cleaning.json`, six tests and `docs/CMS64_CLEANING.md`.
+- **Results:** All rows preserved, including 432 negative total amounts and 8,220 zeros. Repeated category labels create 115 extra category-key rows but no duplicate worksheet keys. Flagged 6,370 additive main components/adjustments, 160 main subtotal/total lines and 6,065 later lines outside the main net sum.
+- **Verification:** All 12,595 funding splits, 80 worksheet balance and net identities and 80 report extracts reconcile; both Parquet full-equality checks passed. All 18 tests passed.
+- **Limitations:** Annual financial reporting rather than beneficiary-level payments; no age breakdown, no proof of waste, no comprehensive mapping of later worksheet sections, no model trained.
+- **Next:** HHS spending and provider enrollment cleaning.
+
 ## Entry template
 
 - Date and milestone:

@@ -10,8 +10,8 @@ The platform covers both pediatric and adult Medicaid populations in NY, NJ, MD,
 
 1. CMS enrollment — completed: [lab and validation report](ENROLLMENT_CLEANING.md).
 2. CMS Child and Adult Core Sets — completed: [lab and validation report](CORE_SETS_CLEANING.md).
-3. CMS-64 expenditure — next: validate source category hierarchy and funding reconciliation.
-4. HHS spending and provider enrollment — profile and validate code, temporal and geographic coverage.
+3. CMS-64 expenditure — completed: [lab and validation report](CMS64_CLEANING.md).
+4. HHS spending and provider enrollment — next: profile and validate code, temporal and geographic coverage.
 5. SPARCS, Census ACS and HRSA — clean source-specific fields and assess analytic joins.
 6. Integrate validated Silver tables and define Gold analytical measures.
 

@@ -28,6 +28,10 @@
 
 **Accepted:** Preserve original rate strings, notes and all measure variants; create nullable numeric rates and explicit reporting status, unit and performance direction. Use the seven-field composite key. Reject unknown unit definitions or flags pending review. Validate quartiles by direction, not universal numeric ordering. No imputation, suppression reconstruction or unweighted aggregation of incompatible cohorts. This supports reproducible population-level comparisons without pretending to have individual care histories.
 
+## 008 — CMS-64 Silver financial grain (2026-11-24)
+
+**Accepted:** Preserve signed whole-dollar integer amounts, all source labels and row provenance. Key by state/year/program/source row rather than category. Isolate the exact main reported net total and independently validate both main worksheet rollups against all three funding columns. Tag verified additive detail; retain later sections without assuming their relation to main net totals. Do not aggregate subtotals with components or infer age-specific spending. Additional section-level semantic mapping is deferred.
+
 ## Decision template
 
 Record date, title, status, problem, considered options, selected approach, rationale, implications, verification and related commit or issue.

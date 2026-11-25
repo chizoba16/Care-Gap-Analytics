@@ -1,0 +1,103 @@
+{
+  "input_detail_rows": 12595,
+  "output_detail_rows": 12595,
+  "output_total_rows": 80,
+  "detail_key": [
+    "state",
+    "fiscal_year",
+    "program",
+    "source_row"
+  ],
+  "total_key": [
+    "state",
+    "fiscal_year",
+    "program"
+  ],
+  "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "states": [
+    "MD",
+    "NJ",
+    "NY",
+    "PA",
+    "VA"
+  ],
+  "source_category_labels": 335,
+  "duplicate_category_keys_excess_rows": 115,
+  "negative_counts": {
+    "total_computable_usd": 432,
+    "federal_share_usd": 424,
+    "state_share_usd": 343
+  },
+  "zero_counts": {
+    "total_computable_usd": 8220,
+    "federal_share_usd": 8232,
+    "state_share_usd": 8427
+  },
+  "line_role_counts": {
+    "main_balance_component": 6230,
+    "outside_main_net_total": 6065,
+    "main_net_adjustment": 140,
+    "main_balance_subtotal": 80,
+    "main_reported_net_total": 80
+  },
+  "funding_rows_reconciled": 12595,
+  "sheets_balance_reconciled": 80,
+  "sheets_net_reconciled": 80,
+  "reported_total_extract_matches": 80,
+  "total_rows_by_state": {
+    "MD": 16,
+    "NJ": 16,
+    "NY": 16,
+    "PA": 16,
+    "VA": 16
+  },
+  "validation": "passed",
+  "detail_parquet_schema": {
+    "fiscal_year": "BIGINT",
+    "state": "VARCHAR",
+    "program": "VARCHAR",
+    "source_category": "VARCHAR",
+    "source_row": "BIGINT",
+    "total_computable_usd": "BIGINT",
+    "federal_share_usd": "BIGINT",
+    "state_share_usd": "BIGINT",
+    "source_workbook": "VARCHAR",
+    "source_sheet": "VARCHAR",
+    "line_role": "VARCHAR",
+    "include_in_main_net_sum": "BOOLEAN"
+  },
+  "reported_totals_parquet_schema": {
+    "fiscal_year": "BIGINT",
+    "state": "VARCHAR",
+    "program": "VARCHAR",
+    "source_category": "VARCHAR",
+    "source_row": "BIGINT",
+    "total_computable_usd": "BIGINT",
+    "federal_share_usd": "BIGINT",
+    "state_share_usd": "BIGINT",
+    "source_workbook": "VARCHAR",
+    "source_sheet": "VARCHAR",
+    "line_role": "VARCHAR"
+  },
+  "built_at_utc": "2026-11-25T03:59:30.117798+00:00",
+  "inputs": {
+    "data/processed/cms64_five_state_detail.csv": "4b7b4a7ef6fa71ce8508537a87d6008b884bce6d6dd683a01f4e9dfd322a9d1b",
+    "data/processed/cms64_five_state_reported_totals.csv": "8868ef78887750f7f45c8b066d4bda6f5f89323e8a4a359625c92a950d8e1e9c"
+  },
+  "outputs": {
+    "data/silver/cms64_detail_clean.csv": "ac86e1155a31c297ee92cc6df724949d50f2942ba45ecd459976cc40be4d301b",
+    "data/silver/cms64_detail_clean.parquet": "c278da6ab2343764bc76fa75c4a790c2a8ee81f374f57e755dabda2f6e9d59ee",
+    "data/silver/cms64_reported_totals_clean.csv": "e1ccd0f6fb263ed2b60c5b188eeb644ffb149e7d70048a4b37aab16e09cb910f",
+    "data/silver/cms64_reported_totals_clean.parquet": "9dde0964e76a80fb7f3444463f705a20635a6c131a07e0b1163936620bc19b8c"
+  },
+  "parquet_roundtrip": "passed"
+}
