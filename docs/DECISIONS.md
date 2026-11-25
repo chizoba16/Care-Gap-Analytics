@@ -36,6 +36,10 @@
 
 **Accepted:** Use DuckDB Parquet scans and compact 84-month masks per NPI/state rather than expanding segments directly. Check identifier format/checksum, code format, count thresholds, months and finite payment; preserve all raw values and audit exclusions. Require one billing-provider state in national enrollment evidence for the month and an active Medicaid plan status before including a cell in exploratory in-scope rollups; assume null end through study end but flag uncertainty. Do not use the other NPI as a fallback. Exclude nonconforming code strings and ≥$1B absolute cell values from exploratory rollups, not raw audits. This is not actual claim state, age-specific spending, product validation or proof of waste. The matched subset is highly selected and requires sensitivity analysis before models. Retain separate HCPCS/NDC tables and never sum unique patient counts across cells.
 
+## 010 — SPARCS Silver discharge semantics (2026-11-25)
+
+**Accepted:** Preserve every de-identified discharge, including repeated fields and redacted geography. Use separate exact and lower-bound LOS with right-censor flag; preserve nulls and distinct unknown birth weight. Use exact decimal dollars and exploratory review flags; cost and charge are not Medicaid payments. Age-band classification does not infer exact ages. Validate structural code formats, not clinical classifications. NY only, no patient linkage; future prediction requires leakage-safe feature timing.
+
 ## Decision template
 
 Record date, title, status, problem, considered options, selected approach, rationale, implications, verification and related commit or issue.

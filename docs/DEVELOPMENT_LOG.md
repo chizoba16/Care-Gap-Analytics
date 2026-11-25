@@ -71,6 +71,14 @@ This chronological record documents completed work, evidence, decisions and next
 - **Limits:** Open-end assumption affects interpretation (90%+ of eligible cells have overlapping open-end evidence); no actual claim state, no age, no full source key uniqueness check, no clinical code reference validation, no provider-level model or reliable state expenditure estimate. Keep all releases separate.
 - **Next:** Clean NY SPARCS, then Census ACS and HRSA. Revisit provider linkage and code validation before Gold/model use.
 
+## 2026-11-25 — Lab 05: NY SPARCS discharge Silver
+
+- **Completed:** Restored workspace and synchronized previous GitHub milestones; verified original SPARCS hash, inspected 635,606 records, implemented `clean_sparcs.py`, record-level Parquet and cohort CSV, report and tests. See [lab](SPARCS_CLEANING.md) and [report](../reports/sparcs_cleaning.json).
+- **Results:** Preserved all records, including 3,062 additional identical published-field rows and 2,641 source-redacted facilities. 475,631 adult and 159,975 pediatric discharges; 1,192 right-censored stays. Source missingness preserved, monetary fields typed exactly.
+- **Verification:** Source schema, payer, year, age, LOS, code, severity, redaction and financial format checks passed; full Parquet multiset reconciliation passed. All 23 tests passed, including three new SPARCS tests. 46 output fields; 17,744 cost-above-charge and 338 high-estimated-cost review flags retained.
+- **Limits:** NY facility locations only; expected payer not reimbursement; no patient identifiers, exact service dates, or longitudinal readmission labels. No model trained. Other states pending.
+- **Next:** Census ACS and HRSA cleaning and county context.
+
 ## Entry template
 
 - Date and milestone:
