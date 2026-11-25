@@ -6,6 +6,15 @@ The platform covers both pediatric and adult Medicaid populations in NY, NJ, MD,
 
 **Milestone 1 status — in progress:** CMS quality and enrollment acquisition and SQLite database foundation complete ([documentation](PUBLIC_DATA_FOUNDATION.md)); CMS-64 and HHS provider spending releases acquired and verified ([spending documentation](SPENDING_DATA_FOUNDATION.md)); provider enrollment, NY hospital discharges and five-state county context acquired ([context documentation](CONTEXT_DATA_FOUNDATION.md)). Next profile HHS, evaluate geographic attribution and integrate CMS financial and county data. Four states' discharge-level data and TAF access remain pending.
 
+## Milestone 2 — data profiling, cleaning and validation (in progress)
+
+1. CMS enrollment — completed: [lab and validation report](ENROLLMENT_CLEANING.md).
+2. CMS Child and Adult Core Sets — next: measure grain, suppression statuses and numeric values.
+3. CMS-64 expenditure — validate source category hierarchy and funding reconciliation.
+4. HHS spending and provider enrollment — profile and validate code, temporal and geographic coverage.
+5. SPARCS, Census ACS and HRSA — clean source-specific fields and assess analytic joins.
+6. Integrate validated Silver tables and define Gold analytical measures.
+
 ## Existing pediatric prototype development steps
 
 1. Obtain a larger pediatric synthetic cohort with documented Medicaid coverage; freeze generator version, configuration and seed. Do not broaden payer eligibility solely to make the model train.

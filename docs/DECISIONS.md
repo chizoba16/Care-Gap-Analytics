@@ -20,6 +20,10 @@
 
 **Accepted:** Preserve provider enrollment segments with their state, dates and plan/status fields. Use overlap and explicit ambiguity checks for provider-level geographic exploration. Do not assume one NPI identifies a single state. Join HRSA and Census on exact five-character county-equivalent FIPS. Use the official ACS bulk files when an API key is unavailable. NY discharge analysis is a single-state sub-study until comparable records are secured for other states.
 
+## 006 — Enrollment Silver grain and missing values (2026-11-24)
+
+**Accepted:** Use final CMS reporting versions, one row per state-month; preserve all source records in Bronze. Keep enrollment fields as nullable integers and month as a date in Parquet. Track missing months and unavailable counts rather than impute them. Do not derive Medicaid-only adult/child totals from incompatible Medicaid/CHIP measures. Use separate cleaning scripts for each source before Gold integration.
+
 ## Decision template
 
 Record date, title, status, problem, considered options, selected approach, rationale, implications, verification and related commit or issue.

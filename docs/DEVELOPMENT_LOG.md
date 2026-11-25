@@ -40,6 +40,13 @@ This chronological record documents completed work, evidence, decisions and next
 - **Limitations:** Comparable NJ, MD, VA and PA discharge files require access arrangements. The public provider source cannot establish beneficiary state or age. No model training occurred.
 - **Next:** Profile spending schemas, document provider linkage ambiguity, integrate financial/county data, assess accessible aggregate hospital comparisons.
 
+## 2026-11-24 — Silver cleaning lab 01: CMS enrollment
+
+- **Completed:** Profiled the existing 1,100-row source, verified its acquisition checksum, selected final reporting versions, converted dates and five enrollment counts, preserved footnotes and missing values, and generated CSV/Parquet Silver outputs.
+- **Results:** 550 final state-month rows, 477 changed matched preliminary counts, 5 preliminary-only July 2026 rows excluded, 44 missing historical months per state, 430 missing final adult counts. All 545 reconcilable Medicaid/CHIP totals passed. See the [lab](ENROLLMENT_CLEANING.md) and [report](../reports/enrollment_cleaning.json).
+- **Verification:** Schema, state, date, version, numeric, uniqueness and reconciliation checks passed, and Parquet row-count round trip passed. All seven unit tests passed, including four new targeted enrollment cleaning tests.
+- **Next:** Clean CMS Core Set quality measures with suppression-aware semantics. No model trained.
+
 ## Entry template
 
 - Date and milestone:
