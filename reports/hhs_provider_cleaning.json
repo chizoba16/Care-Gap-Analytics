@@ -1,0 +1,287 @@
+{
+  "enrollment": {
+    "five_state_rows": 3648557,
+    "state_profile": [
+      {
+        "state": "MD",
+        "records": 1524148,
+        "invalid_npi": 196448,
+        "invalid_interval": 0,
+        "open_end": 1156180,
+        "active_medicaid_records": 385030
+      },
+      {
+        "state": "NJ",
+        "records": 221172,
+        "invalid_npi": 6820,
+        "invalid_interval": 0,
+        "open_end": 189586,
+        "active_medicaid_records": 108045
+      },
+      {
+        "state": "NY",
+        "records": 323566,
+        "invalid_npi": 17467,
+        "invalid_interval": 0,
+        "open_end": 230657,
+        "active_medicaid_records": 254475
+      },
+      {
+        "state": "PA",
+        "records": 896019,
+        "invalid_npi": 31463,
+        "invalid_interval": 0,
+        "open_end": 264410,
+        "active_medicaid_records": 167254
+      },
+      {
+        "state": "VA",
+        "records": 683652,
+        "invalid_npi": 8944,
+        "invalid_interval": 0,
+        "open_end": 296218,
+        "active_medicaid_records": 341826
+      }
+    ],
+    "monthly_linkage": {
+      "candidate_providers": 1070264,
+      "distinct_provider_state_pairs": 3283556,
+      "providers_with_multiple_states_over_period": 589219
+    },
+    "national_rows": 65970112
+  },
+  "spending": {
+    "hcpcs": {
+      "rows": 238015729,
+      "invalid_code_rows": 607098,
+      "invalid_count_rows": 0,
+      "invalid_paid_rows": 0,
+      "extreme_paid_rows": 62,
+      "proxy_cells": 10647363,
+      "negative_paid_rows": 9212,
+      "zero_paid_rows": 37405035,
+      "first_month": "2018-01-01",
+      "last_month": "2024-12-01",
+      "invalid_month_rows": 0,
+      "audit_rows": 4384,
+      "proxy_rows": 401433,
+      "link_rows": [
+        {
+          "link_status": "invalid_billing",
+          "cells": 67997
+        },
+        {
+          "link_status": "missing_billing",
+          "cells": 7806309
+        },
+        {
+          "link_status": "multiple_states",
+          "cells": 117335790
+        },
+        {
+          "link_status": "no_active_medicaid_evidence",
+          "cells": 374285
+        },
+        {
+          "link_status": "no_candidate_month",
+          "cells": 99891555
+        },
+        {
+          "link_status": "unique_in_scope_provider_proxy",
+          "cells": 10648424
+        },
+        {
+          "link_status": "unique_outside_scope",
+          "cells": 1891369
+        }
+      ],
+      "proxy_by_state": [
+        {
+          "provider_state_proxy": "MD",
+          "cells": 1158335
+        },
+        {
+          "provider_state_proxy": "NJ",
+          "cells": 1613519
+        },
+        {
+          "provider_state_proxy": "NY",
+          "cells": 5140541
+        },
+        {
+          "provider_state_proxy": "PA",
+          "cells": 989974
+        },
+        {
+          "provider_state_proxy": "VA",
+          "cells": 1744994
+        }
+      ],
+      "export_reconciliation": "passed",
+      "billing_status_rows": [
+        {
+          "billing_status": "invalid",
+          "cells": 67997
+        },
+        {
+          "billing_status": "missing",
+          "cells": 7806309
+        },
+        {
+          "billing_status": "valid_checksum",
+          "cells": 230141423
+        }
+      ],
+      "other_status_rows": [
+        {
+          "other_status": "invalid",
+          "cells": 1271831
+        },
+        {
+          "other_status": "missing",
+          "cells": 9107839
+        },
+        {
+          "other_status": "valid_checksum",
+          "cells": 227636059
+        }
+      ],
+      "eligible_open_end_cells": 9585068,
+      "diagnostic_paid_by_code_format": [
+        {
+          "code_format_ok": false,
+          "cells": 607098,
+          "raw_cell_amount_usd": "20318842045662.76"
+        },
+        {
+          "code_format_ok": true,
+          "cells": 237408631,
+          "raw_cell_amount_usd": "1480557642908.05"
+        }
+      ]
+    },
+    "ndc": {
+      "rows": 21515000,
+      "invalid_code_rows": 1163224,
+      "invalid_count_rows": 0,
+      "invalid_paid_rows": 0,
+      "extreme_paid_rows": 21,
+      "proxy_cells": 128606,
+      "negative_paid_rows": 468,
+      "zero_paid_rows": 5374654,
+      "first_month": "2018-01-01",
+      "last_month": "2024-12-01",
+      "invalid_month_rows": 0,
+      "audit_rows": 3027,
+      "proxy_rows": 39238,
+      "link_rows": [
+        {
+          "link_status": "invalid_billing",
+          "cells": 2916
+        },
+        {
+          "link_status": "missing_billing",
+          "cells": 580607
+        },
+        {
+          "link_status": "multiple_states",
+          "cells": 16548762
+        },
+        {
+          "link_status": "no_active_medicaid_evidence",
+          "cells": 6725
+        },
+        {
+          "link_status": "no_candidate_month",
+          "cells": 4039065
+        },
+        {
+          "link_status": "unique_in_scope_provider_proxy",
+          "cells": 129240
+        },
+        {
+          "link_status": "unique_outside_scope",
+          "cells": 207685
+        }
+      ],
+      "proxy_by_state": [
+        {
+          "provider_state_proxy": "MD",
+          "cells": 33355
+        },
+        {
+          "provider_state_proxy": "NJ",
+          "cells": 18784
+        },
+        {
+          "provider_state_proxy": "NY",
+          "cells": 1763
+        },
+        {
+          "provider_state_proxy": "PA",
+          "cells": 16668
+        },
+        {
+          "provider_state_proxy": "VA",
+          "cells": 58036
+        }
+      ],
+      "export_reconciliation": "passed",
+      "billing_status_rows": [
+        {
+          "billing_status": "invalid",
+          "cells": 2916
+        },
+        {
+          "billing_status": "missing",
+          "cells": 580607
+        },
+        {
+          "billing_status": "valid_checksum",
+          "cells": 20931477
+        }
+      ],
+      "other_status_rows": [
+        {
+          "other_status": "invalid",
+          "cells": 4710
+        },
+        {
+          "other_status": "missing",
+          "cells": 14168195
+        },
+        {
+          "other_status": "valid_checksum",
+          "cells": 7342095
+        }
+      ],
+      "eligible_open_end_cells": 119538,
+      "diagnostic_paid_by_code_format": [
+        {
+          "code_format_ok": false,
+          "cells": 1163224,
+          "raw_cell_amount_usd": "20382637094047.58"
+        },
+        {
+          "code_format_ok": true,
+          "cells": 20351776,
+          "raw_cell_amount_usd": "40274641104.11"
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "medicaid-provider-spending.parquet": "f646d426126638dd0177cb14a86bfe7d7e9ed6b081a3e1c270bfe5070fb3fb94",
+    "medicaid-provider-spending-ndc.parquet": "a8fe08f7bde9cb4090df1c9795428b57680f0ad643b9371dbf1490e871b7c782",
+    "medicaid-provider-enrollment-segments.parquet": "c763c53946e5f8822e46db47d2cbd0de09c153c6b7045b57504c461afa2ce92a"
+  },
+  "built_at_utc": "2026-11-25T04:12:30.613336+00:00",
+  "outputs": {
+    "data/silver/hhs_provider_enrollment_clean.parquet": "cc20e8fb842e1963aa4fdbcdddd046fb5aa7b3514c62ea41ecaae28b22717b2d",
+    "data/silver/hhs_hcpcs_monthly_audit.parquet": "d47607d50aa28e1a0d68dc19da14cc5c212026a852f0dc10a4bb15c7e300326a",
+    "data/silver/hhs_hcpcs_provider_state_code_month.parquet": "3077e755bcdf1ca51e3e8f0b3cee1b02daa637f6657955c5426028614e496ad9",
+    "data/silver/hhs_ndc_monthly_audit.parquet": "dcd52728e2d2ab95e774097f2de05b6e021c317d5793ac0aa134cade2bdeae32",
+    "data/silver/hhs_ndc_provider_state_code_month.parquet": "f1ceb781821e9a034fb391997594ef639cff01b9075f5ed9a96874796ba8504c"
+  },
+  "validation": "passed"
+}

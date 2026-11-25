@@ -63,6 +63,14 @@ This chronological record documents completed work, evidence, decisions and next
 - **Limitations:** Annual financial reporting rather than beneficiary-level payments; no age breakdown, no proof of waste, no comprehensive mapping of later worksheet sections, no model trained.
 - **Next:** HHS spending and provider enrollment cleaning.
 
+## 2026-11-24 — Lab 04: HHS provider Silver
+
+- **Completed:** Verified three published source checksums; scanned 238,015,729 HCPCS and 21,515,000 NDC cells, preserved 3,648,557 five-state enrollment rows with flags. Implemented `clean_hhs_providers.py`, five Parquet outputs, report, tutorial and two new tests.
+- **Engineering:** Initial explicit segment-to-month expansion exhausted available temporary storage; stopped the process and removed only generated temporary spill files. Replaced expansion with compact 84-month bit masks and one NPI row per map, bounded DuckDB spill. Full run succeeded.
+- **Results:** 607,098 HCPCS and 1,163,224 NDC nonconforming code cells; 117,335,790 HCPCS and 16,548,762 NDC cells have multiple candidate states in month. Exploratory eligible subsets: 10,647,363 HCPCS and 128,606 NDC cells aggregated to 401,433 and 39,238 proxy/code/month rows. No invalid count, month or non-finite amount cells. Audit totals and eligible proxy totals reconcile; 20 tests passed. See [lab](HHS_PROVIDER_CLEANING.md) and [report](../reports/hhs_provider_cleaning.json).
+- **Limits:** Open-end assumption affects interpretation (90%+ of eligible cells have overlapping open-end evidence); no actual claim state, no age, no full source key uniqueness check, no clinical code reference validation, no provider-level model or reliable state expenditure estimate. Keep all releases separate.
+- **Next:** Clean NY SPARCS, then Census ACS and HRSA. Revisit provider linkage and code validation before Gold/model use.
+
 ## Entry template
 
 - Date and milestone:

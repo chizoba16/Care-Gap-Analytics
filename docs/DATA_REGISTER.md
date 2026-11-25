@@ -4,9 +4,9 @@ All entries below are planned unless explicitly marked otherwise. Confirm availa
 
 | Source | Intended analytical unit / coverage | Status |
 | --- | --- | --- |
-| [HHS Medicaid provider spending by HCPCS](https://opendata.hhs.gov/datasets/medicaid-provider-spending/) | National provider-procedure-month; 2018–2024; age and state attribution limitations | Acquired; published SHA-256 verified |
-| [HHS Medicaid provider spending by NDC](https://opendata.hhs.gov/datasets/medicaid-provider-spending-ndc/) | National provider-drug-month; 2018–2024 | Acquired; published SHA-256 verified |
-| [HHS Medicaid Provider Enrollment Segments](https://opendata.hhs.gov/datasets/medicaid-provider-enrollment-segments/) | 2018–2024 enrollment segments; 3,648,557 rows across five states | Acquired; published hash and output state counts verified |
+| [HHS Medicaid provider spending by HCPCS](https://opendata.hhs.gov/datasets/medicaid-provider-spending/) | National provider-procedure-month; 2018–2024; 238,015,729 cells; age and state attribution limitations | Silver national audit and 401,433 exploratory state-proxy/code/month rows validated; [report](../reports/hhs_provider_cleaning.json) |
+| [HHS Medicaid provider spending by NDC](https://opendata.hhs.gov/datasets/medicaid-provider-spending-ndc/) | National provider-drug-month; 2018–2024; 21,515,000 cells | Silver national audit and 39,238 exploratory proxy rows validated; placeholder screening, not product validation |
+| [HHS Medicaid Provider Enrollment Segments](https://opendata.hhs.gov/datasets/medicaid-provider-enrollment-segments/) | 2018–2024 enrollment segments; 3,648,557 rows across five states | Silver flagged and preserved; geographic proxy remains assumption-sensitive |
 | [NY SPARCS](https://health.data.ny.gov/d/sf4k-39ay) | 2024 New York hospital discharges; primary expected Medicaid payer; 635,606 rows | Acquired; count and payer/year filters verified |
 | NJ, MD, VA and PA hospital discharge records | Comparable individual discharge data | Access not secured; application/purchase sources identified |
 | [CMS Child and Adult Core Sets](https://data.medicaid.gov/dataset/a5023394-ab10-465b-bb4a-7de5ac98d90c) | Published 2024 Core Set quality measures, 1,142 rows across all five states (741 Child, 401 Adult); state/year/program/measure/rate definition/population/methodology grain | Silver validated; 94 numeric rates unavailable with original CMS flags retained; [audit and checksums](../reports/core_sets_cleaning.json) |

@@ -19,6 +19,7 @@ The current implemented prototype is pediatric: it identifies a missing-wellness
 - [Data engineering lab 01 — CMS enrollment cleaning and validation](docs/ENROLLMENT_CLEANING.md)
 - [Data engineering lab 02 — CMS Core Sets cleaning and validation](docs/CORE_SETS_CLEANING.md)
 - [Data engineering lab 03 — CMS-64 expenditure cleaning and reconciliation](docs/CMS64_CLEANING.md)
+- [Data engineering lab 04 — HHS provider enrollment and spending](docs/HHS_PROVIDER_CLEANING.md)
 
 ## Five-state public data foundation
 

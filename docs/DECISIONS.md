@@ -32,6 +32,10 @@
 
 **Accepted:** Preserve signed whole-dollar integer amounts, all source labels and row provenance. Key by state/year/program/source row rather than category. Isolate the exact main reported net total and independently validate both main worksheet rollups against all three funding columns. Tag verified additive detail; retain later sections without assuming their relation to main net totals. Do not aggregate subtotals with components or infer age-specific spending. Additional section-level semantic mapping is deferred.
 
+## 009 — HHS spending and enrollment linkage (2026-11-24)
+
+**Accepted:** Use DuckDB Parquet scans and compact 84-month masks per NPI/state rather than expanding segments directly. Check identifier format/checksum, code format, count thresholds, months and finite payment; preserve all raw values and audit exclusions. Require one billing-provider state in national enrollment evidence for the month and an active Medicaid plan status before including a cell in exploratory in-scope rollups; assume null end through study end but flag uncertainty. Do not use the other NPI as a fallback. Exclude nonconforming code strings and ≥$1B absolute cell values from exploratory rollups, not raw audits. This is not actual claim state, age-specific spending, product validation or proof of waste. The matched subset is highly selected and requires sensitivity analysis before models. Retain separate HCPCS/NDC tables and never sum unique patient counts across cells.
+
 ## Decision template
 
 Record date, title, status, problem, considered options, selected approach, rationale, implications, verification and related commit or issue.
