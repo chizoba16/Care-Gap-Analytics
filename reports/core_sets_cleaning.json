@@ -1,0 +1,133 @@
+{
+  "input_rows": 1142,
+  "output_rows": 1142,
+  "input_columns": 21,
+  "output_columns": 25,
+  "key": [
+    "cga_state",
+    "core_set_year",
+    "reporting_program",
+    "measure_abbreviation",
+    "rate_definition",
+    "population",
+    "methodology"
+  ],
+  "duplicate_keys": 0,
+  "raw_blank_counts": {
+    "cga_state": 0,
+    "state": 0,
+    "domain": 0,
+    "reporting_program": 0,
+    "measure_name": 0,
+    "measure_abbreviation": 0,
+    "measure_type": 0,
+    "rate_definition": 0,
+    "core_set_year": 0,
+    "population": 0,
+    "methodology": 0,
+    "state_rate": 0,
+    "number_of_states_reporting": 0,
+    "mean": 0,
+    "median": 0,
+    "bottom_quartile": 0,
+    "top_quartile": 0,
+    "notes": 1048,
+    "source": 0,
+    "statespecific_comments": 0,
+    "rate_used_in_calculating_state_mean_and_median": 0
+  },
+  "state_rows": {
+    "MD": 201,
+    "NJ": 151,
+    "NY": 213,
+    "PA": 338,
+    "VA": 239
+  },
+  "program_rows": {
+    "Adult Core Set": 401,
+    "Child Core Set": 741
+  },
+  "status_rows": {
+    "not_publicly_reported": 22,
+    "reported": 1048,
+    "small_denominator_or_survey_count": 14,
+    "suppressed": 37,
+    "zero_denominator": 21
+  },
+  "unit_rows": {
+    "per_100000_beneficiary_months": 27,
+    "per_1000_beneficiary_months": 11,
+    "percent": 1098,
+    "ratio": 6
+  },
+  "direction_rows": {
+    "higher_is_better": 1069,
+    "lower_is_better": 73
+  },
+  "benchmark_inclusion_rows": {
+    "No": 494,
+    "Yes": 648
+  },
+  "state_program_rows": {
+    "MD": {
+      "Child Core Set": 105,
+      "Adult Core Set": 96
+    },
+    "NJ": {
+      "Child Core Set": 88,
+      "Adult Core Set": 63
+    },
+    "NY": {
+      "Child Core Set": 148,
+      "Adult Core Set": 65
+    },
+    "PA": {
+      "Child Core Set": 200,
+      "Adult Core Set": 138
+    },
+    "VA": {
+      "Child Core Set": 200,
+      "Adult Core Set": 39
+    }
+  },
+  "numeric_rate_nulls": 94,
+  "years": [
+    2024
+  ],
+  "validation": "passed",
+  "parquet_schema": {
+    "cga_state": "VARCHAR",
+    "state": "VARCHAR",
+    "domain": "VARCHAR",
+    "reporting_program": "VARCHAR",
+    "measure_name": "VARCHAR",
+    "measure_abbreviation": "VARCHAR",
+    "measure_type": "VARCHAR",
+    "rate_definition": "VARCHAR",
+    "core_set_year": "BIGINT",
+    "population": "VARCHAR",
+    "methodology": "VARCHAR",
+    "state_rate": "VARCHAR",
+    "number_of_states_reporting": "BIGINT",
+    "mean": "DOUBLE",
+    "median": "DOUBLE",
+    "bottom_quartile": "DOUBLE",
+    "top_quartile": "DOUBLE",
+    "notes": "VARCHAR",
+    "source": "VARCHAR",
+    "statespecific_comments": "VARCHAR",
+    "rate_used_in_calculating_state_mean_and_median": "VARCHAR",
+    "state_rate_status": "VARCHAR",
+    "state_rate_numeric": "DOUBLE",
+    "measure_direction": "VARCHAR",
+    "rate_unit": "VARCHAR"
+  },
+  "built_at_utc": "2026-11-25T03:55:17.489483+00:00",
+  "source": "data/processed/cms_quality_five_states.csv",
+  "source_sha256": "634dbcfb1aee608ea06aaa87768a079e59ca021eb9be390b00eabbc9fb960d19",
+  "outputs": {
+    "data/silver/cms_core_sets_clean.csv": "b27dcb00f4ac645f64c6a8ec67421592217b73fcf80bc7d83f88eaaa1849e8be",
+    "data/silver/cms_core_sets_clean.parquet": "87c7ef0d902060b21136d8811d2385024f00de79aa8b4c0e1248abf8182842bf"
+  },
+  "parquet_roundtrip": "passed"
+}

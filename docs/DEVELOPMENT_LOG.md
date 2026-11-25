@@ -47,6 +47,14 @@ This chronological record documents completed work, evidence, decisions and next
 - **Verification:** Schema, state, date, version, numeric, uniqueness and reconciliation checks passed, and Parquet row-count round trip passed. All seven unit tests passed, including four new targeted enrollment cleaning tests.
 - **Next:** Clean CMS Core Set quality measures with suppression-aware semantics. No model trained.
 
+## 2026-11-24 — Lab 02: CMS Core Sets Silver
+
+- **Completed:** Profiled the actual 2024 five-state CMS quality extract and implemented `clean_core_sets.py`, CSV/Parquet outputs, `reports/core_sets_cleaning.json`, five targeted tests and `docs/CORE_SETS_CLEANING.md`.
+- **Results:** 1,142 rows preserved (741 Child, 401 Adult); 1,048 reported numeric rates and 94 unavailable rates retained as null with source status. Zero duplicate composite keys; 25 output columns. All five states preserved.
+- **Verification:** State identity, program, key, flags, units, numeric types, percentage bounds and directional quartile constraints passed. Full Parquet equality verified; 12 unit tests passed.
+- **Limitations:** Aggregate published quality measures have distinct cohorts, methods, age ranges and units. No patient-level care-gap detection, individual risk prediction or model training performed.
+- **Next:** CMS-64 expenditure cleaning and reconciliation.
+
 ## Entry template
 
 - Date and milestone:

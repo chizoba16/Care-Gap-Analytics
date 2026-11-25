@@ -24,6 +24,10 @@
 
 **Accepted:** Use final CMS reporting versions, one row per state-month; preserve all source records in Bronze. Keep enrollment fields as nullable integers and month as a date in Parquet. Track missing months and unavailable counts rather than impute them. Do not derive Medicaid-only adult/child totals from incompatible Medicaid/CHIP measures. Use separate cleaning scripts for each source before Gold integration.
 
+## 007 — Core Sets Silver semantics (2026-11-24)
+
+**Accepted:** Preserve original rate strings, notes and all measure variants; create nullable numeric rates and explicit reporting status, unit and performance direction. Use the seven-field composite key. Reject unknown unit definitions or flags pending review. Validate quartiles by direction, not universal numeric ordering. No imputation, suppression reconstruction or unweighted aggregation of incompatible cohorts. This supports reproducible population-level comparisons without pretending to have individual care histories.
+
 ## Decision template
 
 Record date, title, status, problem, considered options, selected approach, rationale, implications, verification and related commit or issue.

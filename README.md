@@ -17,6 +17,7 @@ The current implemented prototype is pediatric: it identifies a missing-wellness
 - [Spending data foundation — official downloads and verified extraction](docs/SPENDING_DATA_FOUNDATION.md)
 - [Provider enrollment, hospital and county context data](docs/CONTEXT_DATA_FOUNDATION.md)
 - [Data engineering lab 01 — CMS enrollment cleaning and validation](docs/ENROLLMENT_CLEANING.md)
+- [Data engineering lab 02 — CMS Core Sets cleaning and validation](docs/CORE_SETS_CLEANING.md)
 
 ## Five-state public data foundation
 
